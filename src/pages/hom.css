@@ -1,0 +1,195 @@
+/* Basic reset and global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Homepage container */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  /*background-image: url('https://wallpaperaccess.com/full/1899390.jpg'); /* Update with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 130px;
+  /*background-color: white; /* Add transparency to the hero section */
+  width: 100%;
+  box-shadow: 0 2px 8px #050505ec;
+}
+
+.hero-content {
+  max-width: 60%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #141414;
+}
+
+.hero-content p {
+  font-size: 2rem;
+  color: #646161;
+}
+
+.hero-image img {
+  max-width: 110%;
+  border-radius: 100px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Options section */
+.options {
+  padding: 40px;
+  text-align: center;
+  background-color: rgba(249, 249, 249, 0.8); /* Add transparency to the options section */
+  width: 100%;
+}
+
+.options h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.option-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.option-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.option-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Property listings */
+.property-listings {
+  padding: 40px;
+  width: 100%;
+  background-color: white;
+}
+
+.property-listings h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.property-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.property-card {
+  width: 30%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.property-card img {
+  width: 100%;
+  height: auto;
+}
+
+.property-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.property-info h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.property-info p {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Call to action section */
+.cta {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Footer section */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  width: 120%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-section h2 {
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}

@@ -1,0 +1,72 @@
+/* Add this to your CSS file */
+
+
+.container {
+  display: flex;
+  justify-content: left; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  height: 1000vh;          /* Full viewport height */
+}
+
+.login-container {
+  display: flex;
+  width: 1000px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.login-image img {
+  width: 600px;
+  height: 500px;
+}
+
+.login-form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.login-form p {
+  margin-top: 20px;
+  color: #777;
+}
