@@ -2,6 +2,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Homepage container */
@@ -9,23 +12,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  /*background-image: url('https://wallpaperaccess.com/full/1899390.jpg'); /* Update with your image URL */
-  background-size: cover;
+  width: 100%;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 /* Hero section */
 .hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 130px;
-  /*background-color: white; /* Add transparency to the hero section */
   width: 100%;
   box-shadow: 0 2px 8px #050505ec;
+  background-image: url('https://img.pikbest.com/backgrounds/20220119/real-estate-city-building-modern-background_6240027.jpg!sw800');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .hero-content {
@@ -35,31 +39,42 @@ body {
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #141414;
+  color: #000; /* Black color for headings */
+  padding: 0 7%;
 }
 
 .hero-content p {
-  font-size: 2rem;
-  color: #646161;
+  font-size: 1.5rem;
+  color: #000; /* Black color for paragraphs */
+  padding: 0 7%;
 }
 
-.hero-image img {
-  max-width: 110%;
-  border-radius: 100px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+.search-bar {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
 }
 
 /* Options section */
 .options {
-  padding: 40px;
   text-align: center;
-  background-color: rgba(249, 249, 249, 0.8); /* Add transparency to the options section */
+  padding: 50px 20px;
+  background-color: #f9f9f9;
   width: 100%;
-}
-
-.options h2 {
-  margin-bottom: 20px;
-  color: #333;
 }
 
 .option-buttons {
@@ -69,127 +84,271 @@ body {
 }
 
 .option-btn {
-  background-color: #007bff;
-  color: white;
   padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #007bff;
   border: none;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .option-btn:hover {
   background-color: #0056b3;
 }
 
-/* Property listings */
+/* Property listings section */
 .property-listings {
-  padding: 40px;
-  width: 100%;
-  background-color: white;
-}
-
-.property-listings h2 {
   text-align: center;
-  margin-bottom: 30px;
-  color: #333;
+  padding: 50px 20px;
+  width: 100%;
 }
 
 .property-cards {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .property-card {
-  width: 30%;
+  background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
-  margin: 10px;
+  width: 300px;
+  text-align: left;
 }
 
 .property-card img {
   width: 100%;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
 }
 
 .property-info {
   padding: 20px;
-  text-align: center;
 }
 
 .property-info h3 {
-  margin: 10px 0;
-  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #000; /* Black color for headings */
 }
 
 .property-info p {
-  font-size: 1.2rem;
-  color: #007bff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #000; /* Black color for paragraphs */
 }
 
 .btn {
-  background-color: #007bff;
-  color: white;
   padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
 .btn:hover {
   background-color: #0056b3;
 }
 
-/* Call to action section */
-.cta {
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
+/* Buy, sell, rent section */
+.buy-sell-rent {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 20px;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.buy-home, .sell-home, .rent-home {
   text-align: center;
+  padding: 20px;
+  flex: 1;
+}
+
+.buy-home h2, .sell-home h2, .rent-home h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #000; /* Black color for headings */
+}
+
+.buy-home p, .sell-home p, .rent-home p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #000; /* Black color for paragraphs */
+}
+
+.seller-ratings {
+  background-color: #fff;
+  padding: 40px 0;
+ 
+}
+
+.rating-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.rating-card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 250px;
+  margin: 10px;
+  text-align: left;
+  color: #000; /* Black color for rating cards */
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #202020;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background-color: #141414;
+}
+
+/* CTA section */
+.cta {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #007bff;
+  color: #fff;
+  width: 100%;
 }
 
 .cta h2 {
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  font-size: 2rem;
 }
 
 .cta p {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
-/* Footer section */
+/* Footer */
 .footer {
   background-color: #333;
-  color: white;
-  padding: 20px;
-  width: 120%;
-  display: flex;
-  justify-content: center;
+  color: #fff;
+  width: 100%;
+  
 }
 
 .footer-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  width: 70%;
+  padding: 50px 20px;
+  color: white;
 }
 
 .footer-section {
   flex: 1;
-  padding: 10px;
+  padding: 20px;
 }
 
 .footer-section h2 {
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .footer-section p {
-  margin: 5px 0;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section .social-media a {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer-section .social-media a:hover {
+  color: #007bff;
+}
+
+.footer-section .newsletter form {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-section .newsletter input {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer-section .newsletter button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-section .newsletter button:hover {
+  background-color: #0056b3;
+}
+
+.footer-bottom {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-bottom ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom ul li a {
+  color:white;
+  text-decoration: none;
+}
+
+.footer-bottom ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom p {
+  margin: 0;
 }

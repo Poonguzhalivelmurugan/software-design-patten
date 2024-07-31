@@ -1,0 +1,71 @@
+/* .help-chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-height: 80vh;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+    z-index: 1000;
+  }
+  
+  .help-chat-box.open {
+    transform: translateY(0);
+  }
+  
+  .toggle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+  }
+  
+  .hamburger-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .hamburger-icon .line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+  }
+  
+  .chat-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .chat-content h2, .chat-content h3, .chat-content h4 {
+    margin: 10px 0;
+  }
+  
+  .chat-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .chat-content ul li {
+    margin: 5px 0;
+  }
+   */

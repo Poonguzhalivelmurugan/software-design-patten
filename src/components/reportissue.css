@@ -1,0 +1,65 @@
+/* src/components/report-issue.css */
+
+.report-issue-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .report-issue-page h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .report-issue-page form {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .report-issue-page form div {
+    margin-bottom: 15px;
+  }
+  
+  .report-issue-page form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .report-issue-page form input,
+  .report-issue-page form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .report-issue-page form textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .report-issue-page form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .report-issue-page form button:hover {
+    background-color: #218838;
+  }
+  

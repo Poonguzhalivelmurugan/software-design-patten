@@ -1,11 +1,10 @@
 /* Add this to your CSS file */
 
-
 .container {
   display: flex;
-  justify-content: left; /* Center horizontally */
-  align-items: center;    /* Center vertically */
-  height: 1000vh;          /* Full viewport height */
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  height: 100vh;           /* Full viewport height */
 }
 
 .login-container {
@@ -15,11 +14,13 @@
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  margin-right: 5%;
+  margin-top: 3%;
 }
 
 .login-image img {
   width: 600px;
-  height: 500px;
+  height: 100%;  /* Maintain aspect ratio */
 }
 
 .login-form {
@@ -27,6 +28,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 1; /* Take available space */
 }
 
 .login-form h1 {

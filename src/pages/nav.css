@@ -1,13 +1,17 @@
+/* Existing CSS */
+
 .navbar {
   position: fixed;
   top: 0;
   width: 95%;
-  background-color: #068a0b;
+  height: 10%;
+  background-color: rgba(4, 7, 4, 0.7); /* Semi-transparent background */
   padding: 1rem 3rem; /* Adjusted padding */
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000; /* Ensures the navbar stays on top of other elements */
+  backdrop-filter: blur(10px); /* Optional: adds a blur effect to the background */
 }
 
 .navbar-logo-title {
@@ -16,7 +20,7 @@
 }
 
 .navbar-logo {
-  width: 40px; /* Adjust the width as needed */
+  width: 130px; /* Adjust the width as needed */
   height: auto; /* Maintain the aspect ratio */
   margin-right: 10px; /* Space between logo and text */
 }
@@ -24,6 +28,11 @@
 .navbar h1 {
   color: white;
   margin: 0;
+  font-family: 'Arial', sans-serif; /* Use a different font family */
+  font-size: 2rem; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  letter-spacing: 2px; /* Add some letter spacing */
+  text-transform: uppercase; /* Make the text uppercase */
 }
 
 .navbar ul {
@@ -32,22 +41,88 @@
   margin: 0;
   display: flex;
   margin-left: auto;
+  gap: 1.5rem; /* Add space between items */
+  font-family: 'Verdana', sans-serif; /* Change font family for navbar items */
 }
 
 .navbar ul li {
-  margin-right: 1rem;
+  margin: 0;
+  position: relative; /* Needed for dropdown */
 }
 
 .navbar ul li a {
   color: white;
   text-decoration: none;
+  padding: 0.5rem 1rem; /* Add padding for better click area */
 }
 
 .navbar ul li a:hover {
   text-decoration: underline;
 }
 
+/* Dropdown styles */
+.dropdown {
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(139, 138, 138);
+  color: black;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #555;
+}
+
 /* Add some padding to the top of the page content to prevent it from being hidden behind the fixed navbar */
 body {
   padding-top: 4rem; /* Adjust based on the navbar height */
+}
+
+/* Add this at the end of your nav.css */
+
+.login-button {
+  background-color: #272727; /* Change the color as needed */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Ensure it behaves like a button */
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  text-decoration: none; /* Remove underline on hover */
 }

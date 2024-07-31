@@ -1,0 +1,90 @@
+.about-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  .about-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .about-hero-content {
+    max-width: 50%;
+  
+  }
+  
+  .about-hero-content h1 {
+    font-size: 2.5rem;
+    color: #151615;
+  }
+  
+  .about-hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  .about-hero-image img {
+    max-width: 80%;
+    height: auto;
+    padding-top: 10%;
+    margin-left: 20%;
+    border-radius: 10px;
+  }
+  
+  .about-mission, .about-vision, .about-values, .about-contact {
+    margin-bottom: 50px;
+  }
+  
+  /* h2 {
+    font-size: 2rem;
+    color: #3a3b3a;
+    margin-bottom: 20px;
+  } */
+  
+  .team-members {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .team-member {
+    text-align: center;
+    width: 15%;
+  }
+  
+  .team-member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .values {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .value {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+  }
+  
+  .value h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .value p {
+    font-size: 1rem;
+  }
+  
+  .about-contact p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  

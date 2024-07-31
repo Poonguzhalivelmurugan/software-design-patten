@@ -6,7 +6,7 @@ const initialProperties = [
   {
     id: 1,
     image: 'https://media.salecore.com/salesaspects/shared/GlobalImageLibrary/Responsive/ElegantSeller/real-estate-home-exterior-7-1760-1000.jpg',
-    address: '123 Main St, Springfield, IL',
+    address: 'Saravanampatti, Coimbatore',
     price: '$500,000',
     description: 'A beautiful family home with spacious rooms and a lovely garden.',
     specialOffers: '10% off for first-time buyers!'
@@ -22,7 +22,7 @@ const initialProperties = [
   {
     id: 3,
     image: 'https://i.ibb.co/CMF2Lv5/Real-Estate-7.jpg',
-    address: '789 Pine St, Gotham, IL',
+    address: 'Mumbai., Andheri East, Mumbai - Western Mumbai, Maharashtra',
     price: '$750,000',
     description: 'Luxury condo with all amenities and a great neighborhood.',
     specialOffers: 'Free home insurance for one year!'

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './signup.css';
-import realEstateImage from '../assets/real-estate.jpg';
+import signup from '../assets/signup.jpg';
 
 function SignupPage() {
   const [name, setName] = useState('');
@@ -103,7 +103,7 @@ function SignupPage() {
           </p>
         </div>
         <div className="signup-image">
-          <img src={realEstateImage} alt="Real Estate" />
+          <img src={signup} alt="Real Estate" />
         </div>
       </div>
     </div>
